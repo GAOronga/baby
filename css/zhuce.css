@@ -175,13 +175,13 @@ header {
       #main #main-t a i {
         font-size: 16px; }
     #main #main-t a:first-child {
-      left: 0; }
-    #main #main-t a:last-child {
+      left: 0;
       background: #FFFFFF;
-      border-top: 3px solid #FF5C00;
-      left: 290px; }
-      #main #main-t a:last-child i {
+      border-top: 3px solid #FF5C00; }
+      #main #main-t a:first-child i {
         color: #FF5C00; }
+    #main #main-t a:last-child {
+      left: 290px; }
   #main #main-b {
     margin-top: 54px;
     width: 1078px;
