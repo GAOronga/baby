@@ -174,13 +174,13 @@ header {
       top: -38px; }
       #main #main-t a i {
         font-size: 16px; }
-    #main #main-t a:nth-of-type(2) {
+    #main #main-t a:first-child {
       left: 0; }
-    #main #main-t a:nth-of-type(1) {
+    #main #main-t a:last-child {
       background: #FFFFFF;
       border-top: 3px solid #FF5C00;
       left: 290px; }
-      #main #main-t a:nth-of-type(1) i {
+      #main #main-t a:last-child i {
         color: #FF5C00; }
   #main #main-b {
     margin-top: 54px;
@@ -192,23 +192,26 @@ header {
     padding-top: 42px; }
     #main #main-b #main-b-l {
       float: left;
+      margin-left: 76px; }
+    #main #main-b #main-b-r {
+      float: left;
       width: 446px;
       height: 492px;
       margin-left: 86px; }
-      #main #main-b #main-b-l ul li {
+      #main #main-b #main-b-r ul li {
         padding-bottom: 28px; }
-        #main #main-b #main-b-l ul li span {
+        #main #main-b #main-b-r ul li span {
           font-size: 12px;
           color: #666666; }
-        #main #main-b #main-b-l ul li input {
+        #main #main-b #main-b-r ul li input {
           width: 274px;
           height: 32px;
           border: 1px solid #c1c1c1;
           padding: 0 8px; }
-      #main #main-b #main-b-l ul li.main-te input {
+      #main #main-b #main-b-r ul li.main-te input {
         width: 124px;
         padding: 0 8px; }
-      #main #main-b #main-b-l ul li.main-te a {
+      #main #main-b #main-b-r ul li.main-te a {
         display: inline-block;
         width: 112px;
         height: 32px;
@@ -216,26 +219,28 @@ header {
         font: 12px/32px "";
         border: 1px solid #ffda71;
         color: #ff7800; }
-      #main #main-b #main-b-l ul li.main-te u {
+      #main #main-b #main-b-r ul li.main-te u {
         color: #000; }
-      #main #main-b #main-b-l ul li.main-te b {
+      #main #main-b #main-b-r ul li.main-te b {
         color: #00b8ff; }
-      #main #main-b #main-b-l ul li.main-te i {
+      #main #main-b #main-b-r ul li.main-te i {
         display: inline-block;
         width: 98px;
         height: 32px;
         border: 1px solid #c1c1c1;
         margin-left: 15px; }
-      #main #main-b #main-b-l ul li.main-te1 {
+      #main #main-b #main-b-r ul li.main-te1 {
         overflow: hidden; }
-        #main #main-b #main-b-l ul li.main-te1 .main-te2, #main #main-b #main-b-l ul li.main-te1 .main-te3 {
+        #main #main-b #main-b-r ul li.main-te1 .main-te2, #main #main-b #main-b-r ul li.main-te1 .main-te3 {
           float: left; }
-      #main #main-b #main-b-l #main-tijiao p {
+      #main #main-b #main-b-r #main-tijiao p {
         font: 14px/36px "";
         color: #666666; }
-        #main #main-b #main-b-l #main-tijiao p a {
-          color: #abefff; }
-      #main #main-b #main-b-l #main-tijiao #btn {
+        #main #main-b #main-b-r #main-tijiao p a {
+          color: #000; }
+          #main #main-b #main-b-r #main-tijiao p a:hover {
+            color: #FF5C00; }
+      #main #main-b #main-b-r #main-tijiao #btn {
         background: #FF5C00;
         width: 228px;
         height: 38px;
@@ -244,24 +249,21 @@ header {
         line-height: 38px;
         color: #fff;
         cursor: pointer; }
-      #main #main-b #main-b-l .friend {
+      #main #main-b #main-b-r .friend {
         height: 40px;
         margin-top: 20px; }
-        #main #main-b #main-b-l .friend p {
+        #main #main-b #main-b-r .friend p {
           font: 14px/22px ""; }
-        #main #main-b #main-b-l .friend i {
+        #main #main-b #main-b-r .friend i {
           font-size: 26px;
           padding-right: 8px;
           margin-top: 8px; }
-          #main #main-b #main-b-l .friend i:nth-child(2) {
+          #main #main-b #main-b-r .friend i:nth-child(2) {
             color: #d32725; }
-          #main #main-b #main-b-l .friend i:nth-child(3) {
+          #main #main-b #main-b-r .friend i:nth-child(3) {
             color: #00a0e9; }
-          #main #main-b #main-b-l .friend i:nth-child(4) {
+          #main #main-b #main-b-r .friend i:nth-child(4) {
             color: #bad7f7; }
-    #main #main-b #main-b-r {
-      float: left;
-      margin-left: 76px; }
 
 #footer {
   border-top: 1px solid #d9d9d9;
