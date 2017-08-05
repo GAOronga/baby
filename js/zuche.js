@@ -118,7 +118,57 @@
     	$("#log-r-b").stop().hide(300);
     })
     
-    
+    //注册的代码
+   	$(function(){
+   		var flag=false;
+    	//手机号码
+    	var pattern1=/^1(\d){10}$/;
+    	$(".phonenum").focus(function(){
+    		$(this).css({"border":"1px solid #ffc353"});
+    	})
+    	$(".phonenum").change(function(){
+    		
+    		if(pattern1.test(Number($(this).val()))){
+    			
+				$(this).css({"border":"1px solid green"}).stop().siblings(".green").show().siblings(".error").hide();
+					flag=true;
+			}else{
+				$(this).css({"border":"1px solid red"}).stop().siblings(".error").show().siblings(".green").hide();
+				flag=false;
+			}
+			
+    	})
+    	//设置密码:密码只能输入6-20个字母、数字、下划线  
+    	var pattern2=/^(\w){6,20}$/;
+    	$(".password1").focus(function(){
+    		$(this).css({"border":"1px solid #ffc353","margin-bottom":"3px"}).stop().siblings("strong").show();
+    		/*if(pattern2.test($(this).val()) & ($(this))){
+    			
+			$(this).css({"border":"1px solid green"}).stop().siblings(".green").show().siblings(".error").hide();
+				flag=true;
+			}else{
+				$(this).css({"border":"1px solid red"}).stop().siblings(".error").show().siblings(".green").hide();
+				flag=false;
+			}*/
+    	})
+    	/*$(".password1").change(function(){
+    		if(pattern2.test(Number($(this).val()))){
+    			
+			$(this).css({"border":"1px solid green"}).stop().siblings(".green").show().siblings(".error").hide();
+				flag=true;
+			}else{
+				$(this).css({"border":"1px solid red"}).stop().siblings(".error").show().siblings(".green").hide();
+				flag=false;
+			}
+    	})*/
+    	
+    	
+    	
+   	})
+    	
+    	
+    	
+  
     
     
     
