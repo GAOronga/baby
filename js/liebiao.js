@@ -119,15 +119,21 @@
     })
     
     //列表页的json数据
-    $(function(){
-		$(widow).load(function(){
-			
-			var index = $(this).index();
+   
+		$(window).load(function(){
 			$.get("liebiao.json",function(data){
-				var html = template(".main-1",data[index]);
-				$(".main-1").html(html);
+				var html = template("main-1",data);
+				$(".main-1 ul").html(html);
+				
 			})
-		})
+			$.get("liebiao.json",function(data){
+				var html = template("main-2",data);
+				
+				$(".main-2 ul").html(html);
+				$(".main-3 ul").html(html);
+			})
+			
+		
 		
 		
 		/*$.get("nav.json",function(data){

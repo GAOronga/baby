@@ -540,7 +540,7 @@ header {
             li:hover{
                 top: -10px;
             }
-            li:nth-child(4) {
+            li:nth-child(4),li:nth-child(8){
                 margin: 10px 0 0 0;
             }
             .main-1-b {
@@ -571,7 +571,7 @@ header {
     border-top: 1px solid #d9d9d9;
     width: 100%;
     overflow: hidden;
-    margin-top: 500px;
+    
     #footer_first {
         height: 106px;
         background: #FF5C00;
