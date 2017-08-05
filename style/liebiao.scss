@@ -349,6 +349,110 @@ header{
         dl{
             position: absolute;
             left:16px;
+            top:-2px;
+            font:12px/34px "";          
+            background:#fff;
+            text-align: center;
+           width:146px;
+            dt{
+                font:700 12px/37px "";
+                color:#ff5c00;
+                span{
+                    width:9px;
+                    height:6px;
+                    position:absolute;
+                    left:108px;top:14px;
+                    background: url(../img/t3.png) no-repeat center;
+                }
+             
+            }
+            dd{
+                display: none;
+                position:relative;
+                 background: #fff;
+                font:700 12px/37px "";
+                border: 1px solid #fff;
+               
+               i{                 
+                   color:#FF5C00;
+                   padding-right:10px;
+               }
+               a{
+                   display: inline-block;
+                   width: 70px;
+               }
+            }
+        }
+        dl:hover{
+           span{
+                background: url(../img/t4.png)no-repeat center;
+            }
+            dd{
+                display: block;
+                z-index: 2;
+               
+                &:hover{
+                    border:1px solid #FF5C00;
+                    border-right:none;
+                }
+                
+                &:hover a{
+                    color: #FF5C00;
+                    
+                }
+            }
+        }
+
+    }  
+}
+//广告
+#nav{
+    margin-top: 117px;
+    position: relative;
+    #nav-r{
+        margin-left:150px;
+        li{
+            float:left;
+            font:12px/34px "";
+            padding:0 20px;
+            line-height: 34px;         
+        }
+        li:nth-child(1) a{
+            color:#FF5C00;
+        }
+        #nav-r-b{
+            position: relative;
+            border-left:1px solid #fff;
+            border-right:1px solid #fff;
+        }
+        #nav-r-b div{
+            display: none;
+            position: absolute;
+            width: 88px;
+            
+            
+        }
+        #nav-r-b:hover{
+            border-left:1px solid #FF5C00;
+            border-right:1px solid #FF5C00;
+            
+        }
+        #nav-r-b:hover div{
+              display: block;
+             border: 1px solid #FF5C00;
+             border-top:none;
+             left:-1px;
+             text-align: center;
+        }
+        
+    }
+    #nav-l{
+        position:absolute;
+        width:160px;
+        top:2px;      
+        dl{
+            position: absolute;
+            left:16px;
             top:0;
             font:12px/34px "";          
             background:#fff;
@@ -407,18 +511,91 @@ header{
 }
 //广告
 #banner{
-    background: url(../img/b2.png);
+    width:100%;
+    height:711px;
+    margin-top:156px;
+    img{
+        width:100%;
+        height:711px;
+    }
+    .b1{
+        width:100%;
+        height:10px;
+        background: url(../img/b2.png);
+    }
+
 }
-
-
-
-
- 
+//主体
+#main{
+    background: #1db1fb;
+    >img{
+        width: 1002px;
+        
+    }
+    .main-1{
+        ul{
+            display: flex;
+            justify-content: space-between;
+            width:1002px;
+            flex-wrap: wrap;
+            li{
+                width:242px;
+                img{
+                    width:242px;
+                    height:230px;
+                }
+                .main-1-t{
+                    background: #fbfafa;
+                    height:56px;
+                    width:242px;
+                    font: 12px/20px "";
+                    
+                    p{
+                         white-space:nowrap;
+                         text-overflow:ellipsis;
+                         overflow:hidden;
+                         padding: 10px 16px 0 16px;
+                    }
+                    a{
+                        color:#ff630a;
+                        padding:0 16px;
+                    }
+                   
+                }
+               
+            }
+            .main-1-b{
+                background: #ff7d33;
+                height:38px;
+                line-height: 38px;
+                font:14px/38px "";
+                color:#fff;
+                padding:0 16px;
+                position:relative;
+                a{
+                    display:inline-block;
+                    width: 94px;
+                    color:#fff;
+                    background: #ff640a;
+                    position:absolute;
+                    right: 0;
+                    text-align: center;
+                    height:38px;
+                }
+                
+            }
+        }
+    }
+    
+    
+    
+}
 //底部的样式
 #footer{
     border-top:1px solid #d9d9d9;
     width: 100%;
     overflow: hidden;
+    margin-top:200px;
     #footer_first{
         height: 106px;
         background: #FF5C00;
