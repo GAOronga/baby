@@ -62,7 +62,7 @@ header {
       header #header-l li.te1:hover #box {
         height: 36px;
         background-position-y: -260px;
-        border: 1px solid  #ff5c00;
+        border: 1px solid #ff5c00;
         border-bottom: none;
         background-color: #FFFFFF;
         position: relative;
@@ -174,16 +174,21 @@ header {
     #log #log-c #log-c-b {
       font: 12px/30px "";
       color: #999999; }
-      #log #log-c #log-c-b span, #log #log-c #log-c-b ul {
+      #log #log-c #log-c-b span,
+      #log #log-c #log-c-b ul {
         float: left; }
-        #log #log-c #log-c-b span li, #log #log-c #log-c-b ul li {
+        #log #log-c #log-c-b span li,
+        #log #log-c #log-c-b ul li {
           float: left;
           padding-right: 12px; }
-          #log #log-c #log-c-b span li a, #log #log-c #log-c-b ul li a {
+          #log #log-c #log-c-b span li a,
+          #log #log-c #log-c-b ul li a {
             color: #999999; }
-        #log #log-c #log-c-b span li:nth-child(1) a, #log #log-c #log-c-b ul li:nth-child(1) a {
+        #log #log-c #log-c-b span li:nth-child(1) a,
+        #log #log-c #log-c-b ul li:nth-child(1) a {
           color: #FF5C00; }
-        #log #log-c #log-c-b span li:hover a, #log #log-c #log-c-b ul li:hover a {
+        #log #log-c #log-c-b span li:hover a,
+        #log #log-c #log-c-b ul li:hover a {
           color: #FF5C00; }
   #log #log-r {
     float: right;
@@ -400,30 +405,38 @@ header {
   background: #1db1fb; }
   #main > img {
     width: 1002px; }
-  #main .main-1 ul {
-    display: flex;
-    justify-content: space-between;
+  #main .main-1 ul, #main .main-2 ul, #main .main-3 ul {
+    margin-top: 10px;
     width: 1002px;
-    flex-wrap: wrap; }
-    #main .main-1 ul li {
-      width: 242px; }
-      #main .main-1 ul li img {
+    overflow: hidden;
+    padding-bottom: 20px; }
+    #main .main-1 ul li, #main .main-2 ul li, #main .main-3 ul li {
+      width: 242px;
+      margin-top: 10px;
+      position: relative;
+      float: left;
+      margin-right: 10px; }
+      #main .main-1 ul li img, #main .main-2 ul li img, #main .main-3 ul li img {
         width: 242px;
         height: 230px; }
-      #main .main-1 ul li .main-1-t {
+      #main .main-1 ul li .main-1-t, #main .main-2 ul li .main-1-t, #main .main-3 ul li .main-1-t {
         background: #fbfafa;
         height: 56px;
         width: 242px;
         font: 12px/20px ""; }
-        #main .main-1 ul li .main-1-t p {
+        #main .main-1 ul li .main-1-t p, #main .main-2 ul li .main-1-t p, #main .main-3 ul li .main-1-t p {
           white-space: nowrap;
           text-overflow: ellipsis;
           overflow: hidden;
           padding: 10px 16px 0 16px; }
-        #main .main-1 ul li .main-1-t a {
+        #main .main-1 ul li .main-1-t a, #main .main-2 ul li .main-1-t a, #main .main-3 ul li .main-1-t a {
           color: #ff630a;
           padding: 0 16px; }
-    #main .main-1 ul .main-1-b {
+    #main .main-1 ul li:hover, #main .main-2 ul li:hover, #main .main-3 ul li:hover {
+      top: -10px; }
+    #main .main-1 ul li:nth-child(4), #main .main-2 ul li:nth-child(4), #main .main-3 ul li:nth-child(4) {
+      margin: 10px 0 0 0; }
+    #main .main-1 ul .main-1-b, #main .main-2 ul .main-1-b, #main .main-3 ul .main-1-b {
       background: #ff7d33;
       height: 38px;
       line-height: 38px;
@@ -431,7 +444,7 @@ header {
       color: #fff;
       padding: 0 16px;
       position: relative; }
-      #main .main-1 ul .main-1-b a {
+      #main .main-1 ul .main-1-b a, #main .main-2 ul .main-1-b a, #main .main-3 ul .main-1-b a {
         display: inline-block;
         width: 94px;
         color: #fff;
@@ -445,7 +458,7 @@ header {
   border-top: 1px solid #d9d9d9;
   width: 100%;
   overflow: hidden;
-  margin-top: 200px; }
+  margin-top: 500px; }
   #footer #footer_first {
     height: 106px;
     background: #FF5C00; }
