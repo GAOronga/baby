@@ -2,8 +2,8 @@
 @font-face {
   font-family: 'iconfont';
   /* project id 373142 */
-  src: url("//at.alicdn.com/t/font_i1reb9y3du3ow29.eot");
-  src: url("//at.alicdn.com/t/font_i1reb9y3du3ow29.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_i1reb9y3du3ow29.woff") format("woff"), url("//at.alicdn.com/t/font_i1reb9y3du3ow29.ttf") format("truetype"), url("//at.alicdn.com/t/font_i1reb9y3du3ow29.svg#iconfont") format("svg"); }
+  src: url("//at.alicdn.com/t/font_nna8uya1o8o20529.eot");
+  src: url("//at.alicdn.com/t/font_nna8uya1o8o20529.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_nna8uya1o8o20529.woff") format("woff"), url("//at.alicdn.com/t/font_nna8uya1o8o20529.ttf") format("truetype"), url("//at.alicdn.com/t/font_nna8uya1o8o20529.svg#iconfont") format("svg"); }
 .iconfont {
   font-family: "iconfont" !important;
   font-size: 12px;
@@ -151,8 +151,117 @@ header {
     margin-top: 32px; }
 
 #main {
-  background: #CECECE;
-  height: 640px; }
+  background: #ececec;
+  height: 640px;
+  border-top: 1px solid #d3d3d3;
+  border-bottom: 1px solid #d3d3d3; }
+  #main #main-t {
+    margin-left: 178px;
+    margin-top: 18px;
+    position: relative; }
+    #main #main-t a {
+      display: inline-block;
+      width: 240px;
+      height: 36px;
+      border: 1px solid #dedede;
+      text-align: center;
+      font: 700 12px/36px "";
+      line-height: 36px;
+      color: #979797;
+      border-bottom: none;
+      background: #f8f8f8;
+      position: absolute;
+      top: -38px; }
+      #main #main-t a i {
+        font-size: 16px; }
+    #main #main-t a:first-child {
+      left: 0; }
+    #main #main-t a:last-child {
+      background: #FFFFFF;
+      border-top: 3px solid #FF5C00;
+      left: 290px; }
+      #main #main-t a:last-child i {
+        color: #FF5C00; }
+  #main #main-b {
+    margin-top: 54px;
+    width: 1078px;
+    height: 492px;
+    border: 1px solid #d3d3d3;
+    background: #fff;
+    overflow: hidden;
+    padding-top: 42px; }
+    #main #main-b #main-b-l {
+      float: left;
+      margin-left: 76px; }
+    #main #main-b #main-b-r {
+      float: left;
+      width: 446px;
+      height: 492px;
+      margin-left: 86px; }
+      #main #main-b #main-b-r ul li {
+        padding-bottom: 28px; }
+        #main #main-b #main-b-r ul li span {
+          font-size: 12px;
+          color: #666666; }
+        #main #main-b #main-b-r ul li input {
+          width: 274px;
+          height: 32px;
+          border: 1px solid #c1c1c1;
+          padding: 0 8px; }
+      #main #main-b #main-b-r ul li.main-te input {
+        width: 124px;
+        padding: 0 8px; }
+      #main #main-b #main-b-r ul li.main-te a {
+        display: inline-block;
+        width: 112px;
+        height: 32px;
+        background: #ffefbc;
+        font: 12px/32px "";
+        border: 1px solid #ffda71;
+        color: #ff7800; }
+      #main #main-b #main-b-r ul li.main-te u {
+        color: #000; }
+      #main #main-b #main-b-r ul li.main-te b {
+        color: #00b8ff; }
+      #main #main-b #main-b-r ul li.main-te i {
+        display: inline-block;
+        width: 98px;
+        height: 32px;
+        border: 1px solid #c1c1c1;
+        margin-left: 15px; }
+      #main #main-b #main-b-r ul li.main-te1 {
+        overflow: hidden; }
+        #main #main-b #main-b-r ul li.main-te1 .main-te2, #main #main-b #main-b-r ul li.main-te1 .main-te3 {
+          float: left; }
+      #main #main-b #main-b-r #main-tijiao p {
+        font: 14px/36px "";
+        color: #666666; }
+        #main #main-b #main-b-r #main-tijiao p a {
+          color: #abefff; }
+      #main #main-b #main-b-r #main-tijiao #btn {
+        background: #FF5C00;
+        width: 228px;
+        height: 38px;
+        border: none;
+        font: 700 14px/38px "";
+        line-height: 38px;
+        color: #fff;
+        cursor: pointer; }
+      #main #main-b #main-b-r .friend {
+        height: 40px;
+        margin-top: 20px; }
+        #main #main-b #main-b-r .friend p {
+          font: 14px/22px ""; }
+        #main #main-b #main-b-r .friend i {
+          font-size: 26px;
+          padding-right: 8px;
+          margin-top: 8px; }
+          #main #main-b #main-b-r .friend i:nth-child(2) {
+            color: #d32725; }
+          #main #main-b #main-b-r .friend i:nth-child(3) {
+            color: #00a0e9; }
+          #main #main-b #main-b-r .friend i:nth-child(4) {
+            color: #bad7f7; }
 
 #footer {
   border-top: 1px solid #d9d9d9;
@@ -189,4 +298,4 @@ header {
         position: relative;
         top: -1px; }
 
-/*# sourceMappingURL=zuche.css.map */
+/*# sourceMappingURL=zhuce.css.map */
