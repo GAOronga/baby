@@ -308,11 +308,15 @@ header {
             position: relative;
             border-left: 1px solid #fff;
             border-right: 1px solid #fff;
+            background: #fff;
         }
         #nav-r-b div {
             display: none;
             position: absolute;
             width: 88px;
+            background: #fff;
+            
+           
         }
         #nav-r-b:hover {
             border-left: 1px solid #FF5C00;
@@ -324,6 +328,7 @@ header {
             border-top: none;
             left: -1px;
             text-align: center;
+           
         }
     }
     #nav-l {
@@ -385,101 +390,7 @@ header {
     }
 }
 
-//广告
-#nav {
-    margin-top: 117px;
-    position: relative;
-    #nav-r {
-        margin-left: 150px;
-        li {
-            float: left;
-            font: 12px/34px "";
-            padding: 0 20px;
-            line-height: 34px;
-        }
-        li:nth-child(1) a {
-            color: #FF5C00;
-        }
-        #nav-r-b {
-            position: relative;
-            border-left: 1px solid #fff;
-            border-right: 1px solid #fff;
-        }
-        #nav-r-b div {
-            display: none;
-            position: absolute;
-            width: 88px;
-        }
-        #nav-r-b:hover {
-            border-left: 1px solid #FF5C00;
-            border-right: 1px solid #FF5C00;
-        }
-        #nav-r-b:hover div {
-            display: block;
-            border: 1px solid #FF5C00;
-            border-top: none;
-            left: -1px;
-            text-align: center;
-        }
-    }
-    #nav-l {
-        position: absolute;
-        width: 160px;
-        top: 2px;
-        dl {
-            position: absolute;
-            left: 16px;
-            top: 0;
-            font: 12px/34px "";
-            background: #fff;
-            text-align: center;
-            width: 146px;
-            dt {
-                font: 700 12px/37px "";
-                color: #ff5c00;
-                span {
-                    width: 9px;
-                    height: 6px;
-                    position: absolute;
-                    left: 108px;
-                    top: 14px;
-                    background: url(../img/t3.png) no-repeat center;
-                }
-            }
-            dd {
-                display: none;
-                position: relative;
-                background: #fff;
-                font: 700 12px/37px "";
-                border: 1px solid #fff;
-                i {
-                    color: #FF5C00;
-                    padding-right: 10px;
-                }
-                a {
-                    display: inline-block;
-                    width: 70px;
-                }
-            }
-        }
-        dl:hover {
-            span {
-                background: url(../img/t4.png)no-repeat center;
-            }
-            dd {
-                display: block;
-                z-index: 2;
-                &:hover {
-                    border: 1px solid #FF5C00;
-                    border-right: none;
-                }
-                &:hover a {
-                    color: #FF5C00;
-                }
-            }
-        }
-    }
-}
+
 
 //广告
 #banner {
