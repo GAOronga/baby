@@ -248,7 +248,43 @@
     	
     	
    	})
-    	
+   	var flag1=false;
+	var flag2=false;
+    $("#btn").click(function(){
+		//console.log(num);
+		//正则判断
+//		if(flag1&&flag2){
+			
+			//$(this).attr("href","login.html");
+			//ajax请求后台数据
+			var name=$(".phonenum").val();
+			var psd=$(".password1").val();
+			console.log(name,psd);
+			$.ajax({
+			   type: "POST",
+			   url: "common.php",
+			   data: {"username":name,"psw":psd,"act":"reg"},
+			   success: function(data){
+			   	var data=JSON.parse(data);
+			   	console.log(data);
+			   	//判断接口数据
+			     if(data.error==0){
+			     	alert("注册成功！");
+					window.location="login.html";
+			     	
+			     }else if(data.error=="1"){
+			     	alert("用户名已存在");
+			     	//console.log(num);
+			     }
+			   }
+			});
+			//return num=0;
+//		}else{
+//			alert("请重新输入信息！");
+//			//console.log(num);
+//		}
+		//return false;
+	})	
     	
     	
   
