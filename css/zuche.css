@@ -62,7 +62,7 @@ header {
       header #header-l li.te1:hover #box {
         height: 36px;
         background-position-y: -260px;
-        border: 1px solid #ff5c00;
+        border: 1px solid  #ff5c00;
         border-bottom: none;
         background-color: #FFFFFF;
         position: relative;
@@ -175,13 +175,13 @@ header {
       #main #main-t a i {
         font-size: 16px; }
     #main #main-t a:first-child {
-      left: 0; }
-    #main #main-t a:last-child {
+      left: 0;
       background: #FFFFFF;
-      border-top: 3px solid #FF5C00;
-      left: 290px; }
-      #main #main-t a:last-child i {
+      border-top: 3px solid #FF5C00; }
+      #main #main-t a:first-child i {
         color: #FF5C00; }
+    #main #main-t a:last-child {
+      left: 290px; }
   #main #main-b {
     margin-top: 54px;
     width: 1078px;
@@ -209,23 +209,49 @@ header {
           height: 32px;
           border: 1px solid #c1c1c1;
           padding: 0 8px; }
-        #main #main-b #main-b-r ul li p,
-        #main #main-b #main-b-r ul li em {
+        #main #main-b #main-b-r ul li p, #main #main-b #main-b-r ul li em {
           width: 220px;
           height: 22px;
           line-height: 22px;
           font: 12px/22px "";
           color: #fb0000;
-          margin-left: 78px;
+          margin-left: 72px;
           margin-top: 3px;
           padding: 0 8px;
           display: inline-block;
           border: 1px solid #FF5C00;
           display: none; }
-          #main #main-b #main-b-r ul li p i,
-          #main #main-b #main-b-r ul li em i {
+          #main #main-b #main-b-r ul li p i, #main #main-b #main-b-r ul li em i {
             font-size: 16px;
             padding-right: 5px; }
+        #main #main-b #main-b-r ul li em {
+          position: absolute;
+          top: 34px;
+          left: 0; }
+        #main #main-b #main-b-r ul li p.green {
+          border: none;
+          color: green;
+          position: absolute;
+          top: 36px;
+          left: 0;
+          color: green; }
+        #main #main-b #main-b-r ul li strong {
+          height: 22px;
+          line-height: 22px;
+          font: 12px/22px "";
+          color: #fff;
+          margin-left: 72px;
+          margin-top: 3px;
+          display: inline-block;
+          display: none; }
+          #main #main-b #main-b-r ul li strong b {
+            background: #b1b1b1;
+            display: inline-block;
+            width: 60px;
+            margin-right: 3px;
+            text-align: center; }
+          #main #main-b #main-b-r ul li strong b.ruo {
+            background: #FF5C00; }
       #main #main-b #main-b-r ul li.main-te input {
         width: 124px;
         padding: 0 8px; }
@@ -248,23 +274,17 @@ header {
         border: 1px solid #c1c1c1;
         margin-left: 15px; }
       #main #main-b #main-b-r ul li.main-te1 {
-        position: relative;
-        overflow: hidden; }
-        #main #main-b #main-b-r ul li.main-te1 .main-te2,
-        #main #main-b #main-b-r ul li.main-te1 .main-te3 {
+        overflow: hidden;
+        position: relative; }
+        #main #main-b #main-b-r ul li.main-te1 .main-te2, #main #main-b #main-b-r ul li.main-te1 .main-te3 {
           float: left; }
-        #main #main-b #main-b-r ul li.main-te1 p.yanzheng {
-          position: absolute;
-          left: 0;
-          top: 34px;
-          display: block;
-          border: none;
-          display: none; }
       #main #main-b #main-b-r #main-tijiao p {
         font: 14px/36px "";
         color: #666666; }
         #main #main-b #main-b-r #main-tijiao p a {
-          color: #abefff; }
+          color: #000; }
+          #main #main-b #main-b-r #main-tijiao p a:hover {
+            color: #FF5C00; }
       #main #main-b #main-b-r #main-tijiao #btn {
         background: #FF5C00;
         width: 228px;
@@ -325,4 +345,4 @@ header {
         position: relative;
         top: -1px; }
 
-/*# sourceMappingURL=login.css.map */
+/*# sourceMappingURL=zuche.css.map */

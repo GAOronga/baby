@@ -7,6 +7,10 @@
 		<link rel="stylesheet" type="text/css" href="css/public.css" />
 		<link rel="stylesheet" type="text/css" href="css/login.css" />
 		<script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+		<script type="text/javascript" src="js/gVerify.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+			
+		
 
 	</head>
 
@@ -92,21 +96,27 @@
 					</div>
 					<div id="main-b-r">
 						<ul>
-							<li><span>　　帐户名：</span><input type="text" placeholder=" 请输入邮箱或手机号"></li>
-							<li><span>　　　密码：</span><input type="password" placeholder=" 请输入密码"></li>
+							<li><span>　　帐户名：</span>
+								<input type="text" placeholder=" 请输入邮箱或手机号" class="name">
+								<p class="error"><i class="iconfont">&#xe614;</i>格式不对，请重新输入！</p>
+							</li>
+							<li><span>　　　密码：</span>
+								<input type="password" placeholder=" 请输入密码" class="pass">
+								<p class="error"><i class="iconfont">&#xe614;</i>密码不对，请重新输入！</p>
+							</li>
 							<li class="main-te main-te1">
 								<div class="main-te2">
-								<span>　　验证码：</span><input type="text">
-								</div>
+									<span>　　验证码： </span><input type="text" id="code_input">
+									</div>
 								<div class="main-te3">
-								<i>123</i><u>　看不清？</u><b>换一张</b>
+									<i id="v_container"></i><u>　看不清？</u><b>换一张</b>
 								</div>
-							
+								<p class="yanzheng">验证码不对</p>
 							</li>
 							
 						</ul>
 						<div id="main-tijiao">
-							<p><input type="checkbox"  />　记住我（30天内免登录）
+							<p><input type="checkbox" checked="checked" class="check"/>　记住我（30天内免登录）
 								<a href="#">忘记密码？</a>
 							</p>
 							<input type="button" value="立即登录" id="btn">
@@ -142,7 +152,7 @@
 
 		</section>
 
-		<script type="text/javascript" src="js/zuche.js"></script>
+		<script type="text/javascript" src="js/login.js"></script>
 
 	</body>
 

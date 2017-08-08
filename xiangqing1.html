@@ -4,8 +4,10 @@
 		<meta charset="utf-8" />
 		<title></title>
 		<link rel="stylesheet" type="text/css" href="css/public.css"/>
-		<link rel="stylesheet" type="text/css" href="css/xiangqing.css"/>
+		<link rel="stylesheet" type="text/css" href="css/xiangqing1.css"/>
 		<script type="text/javascript" src="js/jquery-1.11.0.js" ></script>
+		<script type="text/javascript" src="js/jquery.cookie.js">
+		</script>
 		
 	</head>
 	<body>
@@ -27,8 +29,8 @@
 					<ul>
 						<li class="te">
 							<span>欢迎来到母婴之家！　</span>
-							<a href="#">[登录]</a>
-							<a href="#">[免费注册]</a>
+							<a href="login.html">[登录]</a>
+							<a href="zuche.html">[免费注册]</a>
 						</li>
 						<li>|</li>
 						<li class="home">							
@@ -91,7 +93,7 @@
 				</div>
 				<div id="log-r">
 					<div id="log-r-t">
-					<a><i class="iconfont">&#xe630;</i><span>购物车</span><b>0</b></a>
+					<a href="shoping.html"><i class="iconfont">&#xe630;</i><span>购物车</span><b class="num">0</b></a>
 					</div>
 					<div id="log-r-b">
 					<i class="iconfont">&#xe630;</i><span>您的购物车还是空的，去挑选喜欢的产品吧~</span>
@@ -134,10 +136,169 @@
 				</div>
 			</div>
 		</section>
-		
 		<section id="main">
+			<div class="margin">
+				<div class="main-zhuti">
+					<div class="main-nav">
+						<a href="index.html">首页 <i class="iconfont">&#xe649;</i>　</a>
+						<a href="#">奶粉辅食 <i class="iconfont">&#xe649;</i>　</a>
+						<a href="#">奶粉辅食 <i class="iconfont">&#xe649;</i>　</a>
+						<span>惠氏启赋幼儿配方奶粉3段（12-36月）900g（新配方）</span>
+					</div>
+					<div class="goods show">
+						<div class="goods-l">
+							<div class="big">
+								<img src="img/huishi-5.jpg">							
+								<div id="zoom"></div>
+							</div>
+							<div class="bigArea">
+								<img id="big1" src="img/huishi-5.jpg">
+							</div>
+							<div class="little">
+								<i class="iconfont left">&#xe701;</i>
+								<div id="simg">
+									<img src="img/huishi-5.jpg">
+									<img src="img/huishi-6.jpg">
+									<img src="img/huishi-7.jpg">
+								</div>
+								<i class="iconfont right">&#xe612;</i>
+							</div>
+							<div class="goods-l-b">
+								<p>
+									<a href="#"><i class="iconfont" style="color:#4391ea">&#xe609; </i></a>
+									<a href="#"><i class="iconfont" style="color:#6fc314">&#xe616; </i></a>
+									<a href="#"><i class="iconfont" style="color:#e1171b">&#xe604; </i></a>
+									<a href="#"><i class="iconfont" style="color:#4391ea">&#xe615; </i></a>
+									<a href="#"><i class="iconfont" style="color:#ea9501">&#xe650; </i></a>
+									<a href="#"><i class="iconfont" style="color:#209e26">&#xe60a; </i></a>
+									<span>|</span>
+									<a href="#"><i class="iconfont" style="color:#fe9a00">&#xe60d; </i>收藏</a>
+									
+									
+								</p>
+								
+								
+							</div>
+						</div>
+						<div class="goods-c">
+							
+					        <p class="p1">惠氏启赋幼儿配方奶粉3段（12-36月）900g（新配方）</p>
+					        <p class="p2"><a href="#">启赋3段满2听减40/满4听减80</a></p>
+					        <div class="p3"><i class="iconfont">&#xe695; </i>母婴之家发货</div>
+					        <p class="p4">促销价　<i class="iconfont">&#xe618; 298.00</i></p>
+							<p class="p5">规格　　<u>900g<i class="iconfont">　&#xe6f8;</i></u></p>
+							<p class="chose_txt">
+								<label>数量</label><input class="amount" type="text" value="1">
+								<img src="img/shangji.png" class="act1"><img src="img/xiaji.png" class="act2">
+								<img class="act-2" src="img/shoping.png">
+								<img class="act3" src="img/shoping-1.png">
+								<img class="act4" src="img/shoping-2.png"></br>
+								<span id="so">说明：<i class="iconfont">&#xe608;</i>15天内可退货</span>
 			
+							</p>
+							<div class="success">
+								<p>温馨提醒<span class="delete">X</span></p>
+								<div>
+									<p><i class="iconfont">&#xe608;</i>加入成功</p>
+									<a href="index.html"><input type="button" value="继续购物" class="btn1"></a>
+									<a href="shoping.html"><input type="button" value="去结算" class="btn2"/></a>
+								</div>
+							</div>
+						</div>
+						<div class="goods-r">
+							<img src="img/xiang-1.jpg">
+						</div>	
+					</div>
+				<div class="main-c">
+					<div class="main-c-l">
+						<img src="img/xiang-2.png">
+						<div class="main-c-l-b">
+							<p>最近浏览</p>
+								<ul>
+									<li><a><img src="img/liu-1.jpg"></a></li>
+									<li><a><img src="img/liu-1.jpg"></a></li>
+									<li><a><img src="img/liu-1.jpg"></a></li>
+									<li><a><img src="img/liu-1.jpg"></a></li>
+									<li><a><img src="img/liu-1.jpg"></a></li>
+									<li><a><img src="img/liu-1.jpg"></a></li>
+									<li><a><img src="img/liu-1.jpg"></a></li>
+									<li><a><img src="img/liu-1.jpg"></a></li>
+									<li><a><img src="img/liu-1.jpg"></a></li>
+									
+									
+								</ul>
+								
+						</div>
+							
+					</div>
+					<!--评论区-->
+					<div class="main-c-r">
+						<div class="main-comment">
+							<ul class="artList">
+								<li class="active">商品介绍</li>
+								<li>商品评论</li>
+								<li>商品咨询</li>
+								<li>品质保障</li>
+								<input type="button" value="加入购物车"/>
+							</ul>
+							<div class="content">
+								<ul class="detail-list">
+	                                <li>商品名称：惠氏启赋学龄前儿童配方奶粉4段（3-7岁）</li>
+	                                <li>奶粉阶段：4段</li>
+	                                <li>适用年龄：36-84个月</li>
+	                                <li>规格：900g</li>
+	                                <li>产地：爱尔兰</li>
+	                                <li>奶粉类型：儿童奶粉</li>
+                        		</ul>
+							</div>
+							<div class="contain">
+								<ul class="cont">
+									<li class="active">
+										<img src="img/xiangqing-content.jpg">
+										<img src="img/xiangqing-content-1.jpg">
+										<img src="img/xiangqing-content-2.jpg">
+									</li>
+									<li>
+										<img src="img/pinlun.jpg">
+									</li>
+									<li>
+										<div class="total">
+											<img src="img/pinlun.jpg">
+										</div>
+										<div class="commit">
+											<div class="checkBox">
+												<input type="radio" name="chb" checked="checked">全部
+												<input type="radio" name="chb" >追评（13）
+												<input type="radio" name="chb" >图片
+											</div>
+											<ul class="comBox">		
+												<script  id="comBox" type="text/html">
+													{{each rateDetail.rateList as item i}}
+													<li>												
+														<p class="selfCom">{{item.rateContent}}</p>
+														<p class="selfPhone">{{item.auctionSku}}</p>
+														<p class="selfName">{{item.id}}</p>																							
+													</li>
+													{{/each}}
+												</script>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+							
+							
+							
+					</div>
+				</div>
+					
+					
+					
+				</div>	
+			</div>
 		</section>
+
 		<section id="footer">
 			
 			    <div id="footer_first">
@@ -238,7 +399,7 @@
 	        <a id="level_2" href="javascript:;">
 	            <div id="rightIcon_2"></div>
 	            <span>购物车</span>
-	            <b>(0)</b>
+	            <b class="num">(0)</b>
 	        </a>
 	    </div>
 	
@@ -282,6 +443,7 @@
 	
 
 		<script type="text/javascript" src="js/public1.js" ></script>
+		<script type="text/javascript" src="js/xiangqing.js" ></script>
 		
 	</body>
 </html>

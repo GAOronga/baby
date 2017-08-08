@@ -99,21 +99,22 @@
 								<p class="green one"><i class="iconfont">&#xe608;</i>密码强度为弱</p>
 								<p class="green two"><i class="iconfont">&#xe608;</i>密码强度为中</p>
 								<p class="green three"><i class="iconfont">&#xe608;</i>密码强度为强</p>
-								<p class="error"><i class="iconfont">&#xe614;</i>密码长度限制为6-20个字符！</p>
+								<p class="error error1"><i class="iconfont">&#xe614;</i>密码长度限制为6-20个字符！</p>
 							</li>
-							<li><span>请确认密码：</span><input type="password" placeholder=" 请输入密码">
-								<p class="error"><i class="iconfont">&#xe614;</i>两次密码不一致，请重新输入！</p>
+							<li><span>请确认密码：</span><input type="password" placeholder=" 请输入密码" class="password2">
+								<p class="error error2"><i class="iconfont">&#xe614;</i>两次密码不一致，请重新输入！</p>
 								<em><i class="iconfont">&#xe614;</i>确认密码不能为空，请确认！</em>
-								<p class="green"><i class="iconfont">&#xe608;</i></p>
+								<p class="green fore"><i class="iconfont">&#xe608;</i></p>
 							</li>
 							<li class="main-te main-te1">
 								<div class="main-te2">
-								<span>　　验证码：</span><input type="text">
+								<span>　　验证码：</span><input type="text" id="code_input">
 								</div>
 								<div class="main-te3">
-								<i>123</i><u>　看不清？</u><b>换一张</b>
+									<i id="v_container"></i><u>　看不清？</u><b>换一张</b><br />
+									
 								</div>
-							
+								<p class="yanzheng" style="border: none;margin-top: 34px;">验证码不对</p>
 							</li>
 							<li class="main-te"><span>短信验证码：</span><input type="text">
 								<a href="#">　获取手机验证码</a>
@@ -159,7 +160,7 @@
 		</section>
 
 		<script type="text/javascript" src="js/zuche.js"></script>
-
+		<script type="text/javascript" src="js/gVerify.js"></script>
 	</body>
 
 </html>

@@ -353,9 +353,12 @@ header{
                 }
                 li.main-te1{
                     overflow: hidden;
+                    position: relative;
                     .main-te2,.main-te3{
                         float: left;
+                        
                     }
+                     
                 }
             }
             #main-tijiao{

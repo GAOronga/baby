@@ -126,7 +126,8 @@
     	$(".phonenum").focus(function(){
     		$(this).css({"border":"1px solid #ffc353"});
     	})
-    	$(".phonenum").change(function(){
+    	
+    	$(".phonenum").bind("change blur",(function(){
     		
     		if(pattern1.test(Number($(this).val()))){
     			
@@ -137,30 +138,112 @@
 				flag=false;
 			}
 			
-    	})
+			
+    	}))
     	//设置密码:密码只能输入6-20个字母、数字、下划线  
-    	var pattern2=/^(\w){6,20}$/;
+    	
+    	
     	$(".password1").focus(function(){
-    		$(this).css({"border":"1px solid #ffc353","margin-bottom":"3px"}).stop().siblings("strong").show();
-    		/*if(pattern2.test($(this).val()) & ($(this))){
-    			
-			$(this).css({"border":"1px solid green"}).stop().siblings(".green").show().siblings(".error").hide();
-				flag=true;
-			}else{
-				$(this).css({"border":"1px solid red"}).stop().siblings(".error").show().siblings(".green").hide();
-				flag=false;
-			}*/
+    		$(this).css({"border":"1px solid #ffc353","margin-bottom":"3px"})
+    		.stop().siblings("strong").show()
+    		.siblings(".one").hide()
+    		.siblings(".two").hide()
+    		.siblings(".three").hide();
+    		$(".error1").hide();
+    	
     	})
-    	/*$(".password1").change(function(){
-    		if(pattern2.test(Number($(this).val()))){
-    			
-			$(this).css({"border":"1px solid green"}).stop().siblings(".green").show().siblings(".error").hide();
-				flag=true;
-			}else{
-				$(this).css({"border":"1px solid red"}).stop().siblings(".error").show().siblings(".green").hide();
-				flag=false;
+    	var num=0;
+    	$('.password1').bind("keyup",(function () {
+	        var flag1=false;
+	        var flag2=false;
+	        var flag3=false;
+	     	var str=($(this).val());
+	     	
+	     	for(var i=0;i<str.length;i++){
+					//console.log(str[i]);
+					if(str[i]>=0 && str[i]<=9){
+						flag1=true;
+					}
+					if(str[i]>="a" && str[i]<="z"){
+						flag2=true;
+					}
+					if(str[i]>="A" && str[i]<="Z"){
+						flag3=true;
+					}
 			}
-    	})*/
+	     	if(flag1 && flag2 && flag3){
+					$('strong').find(".qiang").css("background","#82be0e");
+					num=1;
+					//console.log(num);
+			}
+	     	else if(flag1 && flag2 && !flag3||flag1 && !flag2 && flag3||!flag1 && flag2 && flag3){
+						$('strong').find(".zhong").css("background","#b6dc2f").siblings(".qiang").css("background","#cccccc");
+					num=2;
+				//console.log(2);
+
+			}else{
+					$('strong').find(".ruo").css("background","#ffc353").siblings().css("background","#cccccc");
+					num=3;
+					//console.log(3);
+			}
+			
+     	    
+ 		})); 	
+    	
+    	$(".password1").blur(function(){
+    		if(num==3){
+    			$(this).css("border","1px solid #59a358");
+    			$(".one").show().siblings("strong").hide().siblings(".two").hide().siblings(".three").hide();
+    		}
+    		if(num==2){
+    			$(this).css("border","1px solid #59a358");
+    			$(".two").show().siblings("strong").hide().siblings(".one").hide().siblings(".three").hide();
+    		}
+    		if(num==1){
+    			$(this).css("border","1px solid #59a358");
+    			$(".three").show().siblings("strong").hide().siblings(".two").hide().siblings(".one").hide();
+    		}
+    		if($(this).val()==""){
+    			$(this).css("border","1px solid red");
+    			$(".error1").show().siblings("p").hide();
+    			$("strong").hide();
+    		}
+    	})
+    	//重复密码
+    	$(".password2").focus(function(){
+    		$(this).css({"border":"1px solid #ffc353","margin-bottom":"3px"});
+    	})
+    	$(".password2").change(function(){
+    		if($(".password1").val()===$(".password2").val()){
+    			$(this).css("border","1px solid #3bb41a");
+    			$(".fore").show().siblings(".error2").hide().siblings("em").hide();
+    		}else{
+    			$(this).css("border","1px solid red");
+    			$(".error2").show().siblings(".fore").hide().siblings("em").hide();
+    		}
+    		
+    	})
+    	$(".password2").blur(function(){
+    		if($(this).val()==""){
+    			$(this).css("border","1px solid red");
+    			$("em").show().siblings(".fore").hide().siblings(".error2").hide();
+    		}
+    	})
+    	//验证码
+    	var verifyCode = new GVerify("v_container");
+    	$("#code_input").focus(function(){
+    		$(this).css({"border":"1px solid #ffc353","margin-bottom":"3px"});
+    	})
+    	$("#code_input").blur(function(){
+    		var res = verifyCode.validate($(this).val());
+			if(res){
+				$(".main-te3").siblings("p").hide();
+			}else{
+				
+				$(this).css({"border":"1px solid red","margin-bottom":"3px"});
+				$(".main-te3").siblings("p").show();	
+			}
+    	})
     	
     	
     	
