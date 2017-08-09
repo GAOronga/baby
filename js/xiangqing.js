@@ -95,7 +95,6 @@ $(function(){
 			}else{
 				$(".num").text(0);
 			}
-			
 			console.log(numberss)
 			$(".act-2").click(function(){
 				var quantity = +$(".amount").val();
