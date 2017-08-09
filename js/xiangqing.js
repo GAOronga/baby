@@ -83,28 +83,32 @@ $(function(){
 
 			//购物车
 			var str = $.cookie("cart");
-			var obj = str ? JSON.parse(str) : {};
-			var numberss = 0;
-//			for(var i in obj){
-//				numberss +=obj[i].num; 
-//			}
-			
-			numberss=obj[10002]
-			console.log(numberss)
-			if(numberss){
-				$(".num").text(numberss);
-			}else{
-				$(".num").text(0);
+			var cartObj = str ? JSON.parse(str) : {};
+
+			init();//初始化购物车数量
+			function init(){
+				var numberss = 0;
+				var str = $.cookie("cart");
+				var cartObj = str ? JSON.parse(str) : {};
+				for (var i in cartObj) {
+					numberss += parseFloat(cartObj[i]) ; 
+				}
+				$(".num").html(numberss);
 			}
+		
+			numberss=cartObj[data[1].id];
+			
 			$(".act-2").click(function(){
-				var quantity = +$(".amount").val();
+				var quantity = parseFloat($(".amount").val());
 				var commodity = data[1].id;
-				obj[commodity] = obj[commodity] ? obj[commodity]+quantity :quantity;
-				var json_str = JSON.stringify(obj);//转换成json形式存cookie；
+				cartObj[commodity] = cartObj[commodity] ? cartObj[commodity] +  quantity : quantity ;
+				var json_str = JSON.stringify(cartObj);//转换成json形式存cookie；
 				$.cookie("cart",json_str);
-				numberss +=quantity;
-				$(".num").text(numberss);
-			})
+				console.log(cartObj);
+				
+				init();  //初始化购物车数量
+				
+			});
 		}
 	});
 	
