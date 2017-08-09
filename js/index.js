@@ -11,9 +11,9 @@
 			   	var html="";
 				for(var i in data){
 					html+=
-					"<li><a href='detail.html?id='"+data[i].id+"'><img src='"+data[i].src+"'></a><span><h1><a href='javascript:;'title='"+
+					"<li><a href='liebiao.html?id='"+data[i].id+"'><img src='"+data[i].src+"'></a><span><h1><a href='liebiao.html' title='"+
 					data[i].title+"'>"+data[i].name+"</a></h1><p>"+data[i].details
-					+"</p><div class='price'>￥<b>"+data[i].price+"</b>起 <a href='detail.html?id="+data[i].id+"'>点击 <br/>进入</a></div></span></li>"          
+					+"</p><div class='price'>￥<b>"+data[i].price+"</b>起 <a href='liebiao.html?id="+data[i].id+"'>点击 <br/>进入</a></div></span></li>"          
 				}
 				$("#special").html(html);
 				$("#today1").html(html);
