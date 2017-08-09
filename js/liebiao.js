@@ -80,7 +80,7 @@
 	
 	
 	
-   // 鼠标经过显示提示框
+   // 鼠标经过显示 提示框
     $("#fixedRight #Right_5").hover(function () {
         $("#fixedRight #hiddenbox_5").css("display","block").animate({"right":"31px"},200)
     },function () {

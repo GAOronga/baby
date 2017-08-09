@@ -90,12 +90,12 @@ $(function(){
 //			}
 			
 			numberss=obj[10002]
+			console.log(numberss)
 			if(numberss){
 				$(".num").text(numberss);
 			}else{
 				$(".num").text(0);
 			}
-			console.log(numberss)
 			$(".act-2").click(function(){
 				var quantity = +$(".amount").val();
 				var commodity = data[1].id;
