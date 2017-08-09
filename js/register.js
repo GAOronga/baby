@@ -263,7 +263,7 @@
 			$.ajax({
 			   type: "POST",
 			   url: "common.php",
-			   data: {"username":name,"psw":psd,"act":"reg"},
+			   data: {"username":name,"password":psd,"act":"reg"},
 			   success: function(data){
 			   	var data=JSON.parse(data);
 			   	console.log(data);

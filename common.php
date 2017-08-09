@@ -26,7 +26,7 @@ switch($act)
 {
 	case 'reg':
 		$username=urldecode($_REQUEST['username']);
-		$password=urldecode($_REQUEST['psw']);
+		$password=urldecode($_REQUEST['password']);
 		$time=time();
 		$check_query = mysql_query("select ID from secret where username='$username' limit 1");
         if(mysql_fetch_array($check_query)){
@@ -52,7 +52,7 @@ switch($act)
 
 	case 'login':
         $username=urldecode($_REQUEST['username']);
-        $password=urldecode($_REQUEST['psw']);
+        $password=urldecode($_REQUEST['password']);
        
 		$check_query = mysql_query("select password from secret where username='$username' and password='$password'
         limit 1");
