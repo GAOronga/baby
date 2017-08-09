@@ -239,11 +239,34 @@ header {
       border-top: none;
       left: -1px;
       text-align: center; }
-  #nav #nav-l {
+  #nav .nav-l {
     position: absolute;
     width: 160px;
     top: 2px; }
-    #nav #nav-l dl {
+    #nav .nav-l #dd_first {
+      width: 946px;
+      background: #fff;
+      position: absolute;
+      left: 145px;
+      top: 37px;
+      height: 404px;
+      width: 940px;
+      border: 1px solid red;
+      display: none;
+      z-index: 999; }
+      #nav .nav-l #dd_first dl {
+        width: 600px;
+        text-align: left;
+        height: 60px; }
+        #nav .nav-l #dd_first dl dt {
+          border-bottom: 1px dashed #999; }
+        #nav .nav-l #dd_first dl dd {
+          display: block; }
+          #nav .nav-l #dd_first dl dd a {
+            padding: 0 5px; }
+          #nav .nav-l #dd_first dl dd a:hover {
+            color: #FF5C00; }
+    #nav .nav-l dl {
       position: absolute;
       left: 16px;
       top: 0;
@@ -251,51 +274,38 @@ header {
       background: #fff;
       text-align: center;
       width: 146px; }
-      #nav #nav-l dl dt {
+      #nav .nav-l dl dt {
         font: 700 12px/37px "";
         color: #ff5c00; }
-        #nav #nav-l dl dt span {
+        #nav .nav-l dl dt span {
           width: 9px;
           height: 6px;
           position: absolute;
           left: 108px;
           top: 14px;
           background: url(../img/t3.png) no-repeat center; }
-      #nav #nav-l dl dd {
-        display: block;
+      #nav .nav-l dl .goodList {
+        display: none;
         position: relative;
         background: #fff;
         font: 700 12px/37px "";
         border: 1px solid #fff;
         z-index: 999; }
-        #nav #nav-l dl dd i {
+        #nav .nav-l dl .goodList i {
           color: #FF5C00;
           padding-right: 10px; }
-        #nav #nav-l dl dd > a {
+        #nav .nav-l dl .goodList > a {
           display: inline-block;
           width: 72px; }
-        #nav #nav-l dl dd #dd_first {
-          width: 946px;
-          background: #fff;
-          position: absolute;
-          left: 145px;
-          top: -1px;
-          height: 404px;
-          border: 1px solid red; }
-          #nav #nav-l dl dd #dd_first ul {
-            padding: 10px 30px;
-            width: 800px; }
-            #nav #nav-l dl dd #dd_first ul li {
-              width: 800px; }
-    #nav #nav-l dl:hover span {
+    #nav .nav-l dl:hover span {
       background: url(../img/t4.png) no-repeat center; }
-    #nav #nav-l dl:hover dd {
+    #nav .nav-l dl:hover .goodList {
       display: block;
       z-index: 2; }
-      #nav #nav-l dl:hover dd:hover {
+      #nav .nav-l dl:hover .goodList:hover {
         border: 1px solid #FF5C00;
         border-right: none; }
-      #nav #nav-l dl:hover dd:hover > a {
+      #nav .nav-l dl:hover .goodList:hover > a {
         color: #FF5C00; }
 
 #banner {

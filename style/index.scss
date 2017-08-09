@@ -293,10 +293,37 @@ header {
             text-align: center;
         }
     }
-    #nav-l {
+    .nav-l {
         position: absolute;
         width: 160px;
         top: 2px;
+         #dd_first {
+                    width: 946px;
+                    background: #fff;
+                    position: absolute;
+                    left: 145px;
+                    top: 37px;
+                    height: 404px;
+                    width:940px;
+                    border: 1px solid red;
+                    display: none;
+                    z-index: 999;
+                    dl{
+                        width:600px;text-align: left;
+                        height:60px;
+                       dt{border-bottom:1px dashed #999;}
+                       dd{
+                           display: block;
+                           a{
+                              padding:0 5px;
+                            }
+                           a:hover{
+                              color:#FF5C00;
+                            }
+                       }
+                    }
+                    
+                }
         dl {
             position: absolute;
             left: 16px;
@@ -318,8 +345,8 @@ header {
                 }
             }
            
-            dd {
-                display: block;
+            .goodList {
+                display:none;
                 position: relative;
                 background: #fff;
                 font: 700 12px/37px "";
@@ -333,31 +360,14 @@ header {
                     display: inline-block;
                     width: 72px;
                 }
-                #dd_first {
-                    width: 946px;
-                    background: #fff;
-                    position: absolute;
-                    left: 145px;
-                    top: -1px;
-                    height: 404px;
-                    border: 1px solid red;
-                    ul{
-                        padding:10px 30px ;
-                        width:800px;
-                        li{
-                            width:800px;
-                           
-                        }
-                    }
-                    
-                }
+               
             }
         }
         dl:hover {
             span {
                 background: url(../img/t4.png)no-repeat center;
             }
-            dd {
+            .goodList {
                 display: block;
                 z-index: 2;
                 &:hover{
@@ -367,6 +377,7 @@ header {
                 &:hover >a {
                     color: #FF5C00;
                 }
+                
             }
         }
     }

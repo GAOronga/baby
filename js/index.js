@@ -113,4 +113,15 @@
     $("#hiddenbox_6 a").click(function () {
         $("html,body").animate({scrollTop:0},500);
     })
+    //nav划过事件
+    $(".goodList").hover(function(){
+    	$(this).parents("dl").siblings("#dd_first").show();
+    },function(){
+    	$(this).parents("dl").siblings("#dd_first").hide();
+    })
+    
+    
+    
+    
+    
 })(jQuery)
