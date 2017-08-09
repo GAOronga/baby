@@ -65,36 +65,41 @@ $(function(){
    	//购物车
    	$(function(){
 	
-	var res =location.search;//接收的数据
-	var tt = res.slice(1).split("=")
-	var num = tt[1];
+//	var res =location.search;//接收的数据
+//	var tt = res.slice(1).split("=")
+//	var num = tt[1];
 
 	$.ajax({
 		type:"get",
 		url:"js/list.json",
 		async:true,
 		success:function(data){
-			var lis=0;
-			for(var i=0;i<data.length;i++){
-				if(data[i].id == num){
-					lis = i;
-				}
-			}
+//			var lis=0;
+//			for(var i=0;i<data.length;i++){
+//				if(data[i].id == num){
+//					lis = i;
+//				}
+//			}
 
 			//购物车
 			var str = $.cookie("cart");
 			var obj = str ? JSON.parse(str) : {};
 			var numberss = 0;
-			for(var i in obj){
-				console.log(obj[i])
-				numberss +=obj[i]; 
-			}
-			$(".num").text(numberss);
+//			for(var i in obj){
+//				numberss +=obj[i].num; 
+//			}
 			
+			numberss=obj[10002]
+			if(numberss){
+				$(".num").text(numberss);
+			}else{
+				$(".num").text(0);
+			}
+			
+			console.log(numberss)
 			$(".act-2").click(function(){
 				var quantity = +$(".amount").val();
-				console.log(quantity)
-				var commodity = data[lis].id;
+				var commodity = data[1].id;
 				obj[commodity] = obj[commodity] ? obj[commodity]+quantity :quantity;
 				var json_str = JSON.stringify(obj);//转换成json形式存cookie；
 				$.cookie("cart",json_str);

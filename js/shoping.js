@@ -94,6 +94,7 @@ $(function(){
 					 $(".num").find("p").html(numberss); 
 					 $(this).parent().siblings(".single").text(mountt);
 					 $(".nums").html(numberss);
+					
 					 
 				})
 			})
